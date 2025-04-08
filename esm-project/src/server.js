@@ -7,7 +7,7 @@ const app = express();
 
 //route to our files/endpoints
 app.get("/home", (req, res) => res.send("Hello, world!"));
-app.use("/my", router);
+app.use("/", router);
 
 //start the server
 const PORT = 8000;
