@@ -1,13 +1,12 @@
 import express from 'express';
 import router from './routes/home.routes.js';
+import otherRoute from './routes/other.routes.js';
 
 const app = express();
 
-//configure the app for requests...
-
 //route to our files/endpoints
-app.get("/home", (req, res) => res.send("Hello, world!"));
 app.use("/", router);
+app.use("/", otherRoute);
 
 //start the server
 const PORT = 8000;
