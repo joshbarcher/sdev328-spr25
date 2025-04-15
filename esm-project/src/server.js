@@ -5,6 +5,9 @@ import queryRouter from './routes/query.route.js';
 
 const app = express();
 
+app.use(express.static("public"));
+app.use(express.urlencoded({ extended: true }));
+
 //route to our files/endpoints
 app.use("/", router);
 app.use("/", otherRoute);

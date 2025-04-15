@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "title": "Bohemian Rhapsody",
+        "length": "5:55",
+        "artist": "Queen",
+        "album": "A Night at the Opera",
+        "released": "1975-10-31"
+    },
+    {
+        "id": 2,
+        "title": "Billie Jean",
+        "length": "4:54",
+        "artist": "Michael Jackson",
+        "album": "Thriller",
+        "released": "1983-01-02"
+    },
+    {
+        "id": 3,
+        "title": "Smells Like Teen Spirit",
+        "length": "5:01",
+        "artist": "Nirvana",
+        "album": "Nevermind",
+        "released": "1991-09-10"
+    },
+    {
+        "id": 4,
+        "title": "Imagine",
+        "length": "3:03",
+        "artist": "John Lennon",
+        "album": "Imagine",
+        "released": "1971-10-11"
+    },
+    {
+        "id": 5,
+        "title": "Hey Jude",
+        "length": "7:11",
+        "artist": "The Beatles",
+        "album": "Hey Jude",
+        "released": "1968-08-26"
+    },
+    {
+        "id": 6,
+        "title": "Like a Rolling Stone",
+        "length": "6:09",
+        "artist": "Bob Dylan",
+        "album": "Highway 61 Revisited",
+        "released": "1965-07-20"
+    },
+    {
+        "id": 7,
+        "title": "Rolling in the Deep",
+        "length": "3:48",
+        "artist": "Adele",
+        "album": "21",
+        "released": "2010-11-29"
+    },
+    {
+        "id": 8,
+        "title": "Lose Yourself",
+        "length": "5:26",
+        "artist": "Eminem",
+        "album": "8 Mile: Music from and Inspired by the Motion Picture",
+        "released": "2002-10-28"
+    },
+    {
+        "id": 9,
+        "title": "Hotel California",
+        "length": "6:30",
+        "artist": "Eagles",
+        "album": "Hotel California",
+        "released": "1976-12-08"
+    },
+    {
+        "id": 10,
+        "title": "Uptown Funk",
+        "length": "4:30",
+        "artist": "Mark Ronson ft. Bruno Mars",
+        "album": "Uptown Special",
+        "released": "2014-11-10"
+    }
+]
