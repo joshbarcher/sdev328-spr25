@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title My First Pug Page
+    body 
+        header 
+            h1 My First Pug Page 
+            p Welcome
+
+        main
+            div
+                h2 Here are some features
+                ul 
+                    li 
+                        a(href="https://pugjs.org/api/getting-started.html") Pug uses indentation
+                    li: a(href="#") Pug includes partial templates
+                    li 
+                        <span class="favorite">Pug can <em>use</em> inheritance</span>
+
+            div
+                p.more-info Learn all about it
+                p#special Learn the special mechanics of pug
+                p(class="" id="") Content here 
+                p.info#big Feature of pug
+
+        footer
+            p By: Josh Archer
