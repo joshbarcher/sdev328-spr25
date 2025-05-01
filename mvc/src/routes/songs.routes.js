@@ -3,8 +3,8 @@ import { requestSongs, requestSingleSong, addSongRecord } from './../controllers
 
 const router = express.Router();
 
-router.get("/songs", requestSongs);
-router.get("/songs/:songId", requestSingleSong);
-router.get("/songs/add/query", addSongRecord);
+router.get("/api/songs", requestSongs);
+router.get("/api/songs/:songId", requestSingleSong);
+router.get("/api/songs/add/query", addSongRecord);
 
 export default router;
