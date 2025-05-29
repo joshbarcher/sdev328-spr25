@@ -52,6 +52,20 @@ export const updatePet = async (req, res) => {
     }
 }
 
-export const deletePet = (req, res) => {
-    
+export const deletePet = async (req, res) => {
+    const { petId } = req.body;
+
+    const updated = await schema.destroy({
+        where: {
+            petId
+        }
+    })
+
+    if (updated) {
+        res.status(204).json({
+            message: "Found it!"
+        });
+    } else {
+        res.status(404).json({ message: "Not found!" })
+    }
 }
