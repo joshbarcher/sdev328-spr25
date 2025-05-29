@@ -3,6 +3,9 @@ import apiRouter from './routes/api.routes.js';
 
 const app = express();
 
+//middleware
+app.use(express.json());
+
 //routes...
 app.use("/api/v1/pets", apiRouter);
 
