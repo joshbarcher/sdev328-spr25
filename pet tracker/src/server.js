@@ -1,9 +1,11 @@
 import express from 'express';
 import apiRouter from './routes/api.routes.js';
+import cors from 'cors';
 
 const app = express();
 
 //middleware
+app.use(cors()); //enable cors for other origins...
 app.use(express.json());
 
 //routes...

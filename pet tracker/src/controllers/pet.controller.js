@@ -1,5 +1,23 @@
 import schema from './../models/pet.model.js';
 
+export const petQuery = async (req, res) => {
+    const { field, query, sortField, sortDirection } = req.query;
+
+    const matches = await schema.findAll({
+        where: {
+            field: { 
+                [Op.like]: `%${query}%`
+            }
+        }
+    })
+
+    if (matches.length === 0) {
+        res.status(404).end();
+    } else {
+        res.status(200).json(matches);
+    }   
+}
+
 export const getPetById = async (req, res) => {
     const id = req.query.id;
     const pet = await schema.findByPk(id);
