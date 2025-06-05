@@ -1,0 +1,27 @@
+include header.pug
+
+h1 Songs list 
+
+if fav 
+    section.favorite 
+        h2 Favorite Song: #{fav.title}
+        p Artist: #{fav.artist}
+else 
+    section.favorite 
+        h2 No favorite provided
+
+table 
+    thead 
+        tr 
+            th Title 
+            th Artist 
+            th Album
+
+    tbody
+        each song in songs
+            tr 
+                td= song.title
+                td= song.artist
+                td= song.album
+
+include footer.pug
