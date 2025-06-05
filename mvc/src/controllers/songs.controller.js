@@ -21,3 +21,18 @@ export const addSongRecord = (req, res) => {
     addSong(song);
     res.status(201).send("Song added");
 }
+
+export const showForm = (req, res) => {
+    res.render("form");
+}
+
+export const formHandler = (req, res) => {
+    //gather up the form data and send it to our repository
+    const { title, artist, release, length, album } = req.body;
+    const song = { title, artist, release, length, album };
+
+    addSong(song);
+
+    //show a receipt page? redirect?
+    res.redirect("song-cards");
+}

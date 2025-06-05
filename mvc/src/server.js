@@ -8,6 +8,9 @@ const app = express();
 app.set("view engine", "pug");
 app.set("views", "src/views")
 
+app.use(express.static("public"));
+app.use(express.urlencoded({ extended: true }));
+
 app.use("/", router);
 app.use("/", pageRouter);
 

@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Add Song Form
+        link(rel="stylesheet", href="/forms.css")
+    body 
+        h1 Add a new song 
+        form(action="/pages/songs/form" method="post")
+            section.form-group 
+                label(for="title") Title 
+                input(type="text" id="title" name="title")
+            section.form-group 
+                label(for="artist") Artist 
+                input(type="text" id="artist" name="artist")
+            section.form-group 
+                label(for="release") Release 
+                input(type="text" id="release" name="release")
+            section.form-group 
+                label(for="length") Length 
+                input(type="text" id="length" name="length")
+            section.form-group 
+                label(for="album") Album 
+                input(type="text" id="album" name="album")
+            button Add Song
+            

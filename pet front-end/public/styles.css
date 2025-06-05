@@ -1,0 +1,52 @@
+html {
+    background-color: rgb(73, 0, 0);
+}
+
+body {
+    background-color: beige;
+    width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.playpen {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    .card {
+        border: 1px solid rgb(56, 0, 0);
+        padding: 20px;
+        border-radius: 10px;
+    }
+}
+
+form {
+    .form-group {
+        margin-bottom: 10px;
+
+        label {
+            display: inline-block;
+            width: 120px;
+        }
+    
+        input, textarea {
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 12px 6px;
+        }
+    }
+
+    button {
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 6px;
+        margin-bottom: 10px;
+        width: 120px;
+    }
+}

@@ -1,0 +1,23 @@
+mixin cardSection(song) 
+    section.card 
+        h2= song.title 
+        p Some content goes here 
+        p Some more here...
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Songs in Cards 
+    body 
+        h1 My Songs Page
+
+        if favSong
+            h2 Favorite Song 
+            +cardSection(favSong)
+
+        h2 List of Songs
+        section.cards
+            each song in songs 
+                +cardSection(song) 
