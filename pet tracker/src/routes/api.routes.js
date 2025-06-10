@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { getAllPets, addPet, updatePet, deletePet, getPetById } from './../controllers/pet.controller.js';
+import { getAllPets, addPet, updatePet, deletePet, getPetById, petQuery } from './../controllers/pet.controller.js';
 
 const router = Router();
 
@@ -9,5 +9,7 @@ router.get("/", getAllPets);
 router.post("/", addPet);
 router.put("/", updatePet);
 router.delete("/", deletePet);
+
+router.get("/query", petQuery);
 
 export default router

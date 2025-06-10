@@ -10,7 +10,7 @@ const sequelize = new Sequelize(DB_DATABASE, DB_USERNAME, DB_PASSWORD, {
     host: DB_HOST,
     port: DB_PORT,
     dialect: 'mysql',
-    logging: null
+    logging: msg => console.log(msg)
 })
 
 //start the connection

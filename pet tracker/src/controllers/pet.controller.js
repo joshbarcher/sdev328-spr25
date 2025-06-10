@@ -1,14 +1,16 @@
 import schema from './../models/pet.model.js';
+import { Op } from 'sequelize';
 
 export const petQuery = async (req, res) => {
     const { field, query, sortField, sortDirection } = req.query;
 
     const matches = await schema.findAll({
         where: {
-            field: { 
+            [field]: { 
                 [Op.like]: `%${query}%`
             }
-        }
+        },
+        order: [[ sortField, sortDirection ]]
     })
 
     if (matches.length === 0) {
