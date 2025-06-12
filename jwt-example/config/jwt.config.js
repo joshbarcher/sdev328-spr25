@@ -7,14 +7,16 @@ import users from './../repo/users.repo.js';
 config();
 
 const options = {
-    jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken,
+    jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
     secretOrKey: process.env.JWT_SECRET
 }
 
 //middleware to validate
 passport.use(new Strategy(options, (payload, done) => {
+    console.log(payload);
     const userId = payload.id;
     const user = users.find(el => el.id === userId);
+    console.log(user);
 
     if (user) {
         done(null, user);

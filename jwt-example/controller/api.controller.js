@@ -27,3 +27,10 @@ export const login = (req, res) => {
         token
     });
 }
+
+export const getHotels = (req, res) => {
+    res.status(200).json({
+        message: "Access to data granted",
+        hotels
+    })
+}
